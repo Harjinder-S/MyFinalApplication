@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
             Intent nextPage = new Intent(MainActivity.this, SecondActivity.class);
 
             startActivity(nextPage);
+            Toast.makeText(MainActivity.this, "You clicked on the OwlBot Button now:"
+                    , Toast.LENGTH_LONG).show();
+
         });
 
     }
